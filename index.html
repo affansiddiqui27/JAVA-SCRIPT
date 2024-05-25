@@ -1,0 +1,187 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+</head>
+
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ8OzAGFPshiupQPT_rUFnHGZseBTwtXSJXrBJ3CaxZg&s" width="70px" alt="">
+        </div>
+        <div class="links">
+            <button><a href='/'>Assignment # 1</a></button>
+            <button><a href='/assign2'>Assignment # 2</a></button>
+            <button><a href='/assign3'>Assignment # 3</a></button>
+            <button><a href='/assign4'>Assignment # 4</a></button>
+            <button><a href='/assign5'>Assignment # 5</a></button>
+            <button><a href='/assign6'>Assignment # 6</a></button>
+        </div>
+    </div>
+    <br>
+    <h1>Assignment # 1</h1>
+    <h4>JAVASCRIPT</h4>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqWU2HRaJDjS-A3mq_CwMNBZkR_LtLBwDSHGgubI3h6w&s" alt="">
+    <h4>First Assignment Done Practice in Alert Box...</h4>
+
+
+    <div id="for">
+        <script>
+            
+            // question 1
+
+            let city = prompt("Enter Your City like Karachi")
+            if (city === "karachi") {
+                alert("Welcome To city of lights")
+            }
+            // question 1
+
+            let userMale = prompt("Enter Your Gender")
+            if (userMale === "male") {
+                alert("God Morning Sir")
+            } else if (userMale === "female") {
+                alert("Good Morning Ma'am")
+            }
+            // question 3
+
+            let signal = prompt("Enter A Traffic Light Color (Like red, green, yellow)")
+            if (signal === "red") {
+                alert("Must Stop")
+            } else if (signal === "green") {
+                alert("Move Now")
+            } else if (signal === "yellow") {
+                alert("Ready To Move")
+            }
+            // question 4
+
+            let fuel = prompt("Enter Fuel Quantity in yours Car (Like 0.10 to o.99)")
+            if (fuel > "0.25") {
+                alert("Go On The Way")
+            } else if (fuel < 0.25) {
+                alert("Please refill the fuel in your car")
+            }
+
+            // question 5
+
+            let a = 4;
+            if (++a === 5) {
+                alert("Given Condition For Variable a is True")
+            }
+            let b = 82;
+            if (b++ === 83) {
+                alert("Condition for Variable b is True")
+            }
+            let c = 12;
+            if (c++ === 13) {
+                alert("condition 1 is true");
+            }
+            if (c === 13) {
+                alert("condition 2 is true");
+            }
+            if (++c < 14) {
+                alert("condition 3 is true");
+            }
+            if (c === 14) {
+                alert("condition 4 is true");
+            }
+            let materialCost = 20000;
+            let laborCost = 2000;
+            let totalCost = materialCost + laborCost;
+            if (totalCost === laborCost + materialCost) {
+                alert("The cost equals");
+            }
+            if (true) {
+                alert("True");
+            }
+            if (false) {
+                alert("False");
+            }
+            if ("car" < "cat") {
+                alert("car is smaller than cat");
+            }
+            // question 6
+
+            document.write("<h1>Marksheet</h1>")
+            let sub1 = prompt("Enter 1st Subject Obtained Number Out of 100")
+            let sub2 = prompt("Enter 2nd Subject Obtained Number Out of 100")
+            let sub3 = prompt("Enter 3rd Subject Obtained Number Out of 100")
+            let totalobt = prompt("Enter Total Obtained Marks in 3 Subjects")
+            let obt = totalobt
+            let per = totalobt / 300 * 100
+
+            document.write("<h4>Total Marks: 300</h4>")
+            document.write( "<h4>Marks Obtained: " + totalobt+"</h4>")
+            document.write( "<h4>Percentage: " + per + "% </h4>")
+            if (per > 80) {
+                document.write( "<h4>Grade: A-one </h4>")
+                document.write("<h4>Remarks: Excellent </h4>")
+            }
+            else if (per >= 70) {
+                document.write("<h4>Grade: A </h4>")
+                document.write( "<h4>Remarks: Good </h4>")
+            }
+            else if (per >= 60) {
+                document.write("<h4>Grade: B </h4>")
+                document.write("<h4>Remarks: You need to improve </h4>")
+            }
+            else if (per < 60) {
+                document.write("<h4>Grade: Fail </h4>")
+                document.write( "<h4>Remarks: Sorry </h4>")
+            }
+            // question 7
+            let secretNum = 5;
+            let userNum = prompt("Guess the secret number???")
+            if(userNum ==secretNum){
+                alert("Bingo! Correct")
+            }
+            else if(userNum == '4'){
+                alert("Close enough to the correct answer.")
+            }
+            else{
+                alert("Number is not matched try again..")
+            }
+            
+            // question 8
+            let user = prompt("Enter a number then I will tell is this num odd or even??")
+            if(user%2){
+                alert( user+" is a odd number.")
+            }
+            else{
+                alert( user+" is a  qw even number.")
+            }
+
+
+            // question 10
+
+            let temp = prompt("Enter Your City Temperatuer (Like 10, 20, 30, 40)")
+            if (temp > 40) {
+                alert("It's to hot outside")
+            }
+            else if (temp > 30) {
+                alert("The weather today is normal")
+            }
+            else if (temp > 20) {
+                alert("Today's weather is cool")
+            }
+            else if (temp < 10) {
+                alert("OMG! Today's weather is so cool")
+            }
+            // question 11
+            let num1 = +prompt("Enter Your 1st Number")
+            let opt = prompt("Enter Your Operator (Like +, -, *, /, %)")
+            let num2 = +prompt("Enter Your 2nd Number")
+
+           
+        </script>
+        </div>
+
+
+
+
+    </body>
+    </html>
